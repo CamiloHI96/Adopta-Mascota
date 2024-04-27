@@ -1,0 +1,65 @@
+/* Estilos generales */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background-color: black;
+}
+
+/* Estilos para los grupos de columnas */
+.column-group {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+}
+
+/* Estilos de ejemplo para cada columna */
+.column {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+}
+
+/* Estilos para el grupo de la izquierda */
+.left {
+    flex: 1;
+}
+
+/* Estilos para la columna 2 */
+.column-2 {
+    flex: 2;
+}
+
+.login {
+    background-color: black;
+    background-image: url("");
+    background-size: contain; /* Ajusta la imagen para que quepa completamente dentro del contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100%; /* Ajusta la altura del contenedor para que ocupe el 100% del área */
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .column-group {
+        display: none; /* Ocultar todos los grupos de columnas */
+    }
+    .column-2 {
+        display: block; /* Mostrar solo la columna 2 */
+        width: 100%; /* Ocupar todo el ancho */
+    }
+}
