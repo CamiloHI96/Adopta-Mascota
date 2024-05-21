@@ -1,0 +1,95 @@
+/* Estilos generales */
+body,
+html {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    height: 100%;
+    background-color: #1f2029;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px auto 1fr 60px;
+    grid-template-areas:
+        "header"
+        "aside"
+        "main"
+        "footer";
+    height: 100vh;
+}
+
+/* Estilos para móviles */
+@media (max-width: 479px) {
+    header,aside,main,footer {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    aside h1 {
+        margin: auto;
+        font-size: 15px;
+    }
+}
+
+/* Estilos para tabletas */
+@media (min-width: 480px) and (max-width: 767px) {
+    header,aside,main,footer {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .layout {
+        grid-template-columns: 160px 1fr;
+        grid-template-rows: 60px 1fr 60px;
+        grid-template-areas:
+            "header header"
+            "aside main"
+            "footer footer";
+    }
+
+    aside h1 {
+        height: 100%;
+        font-size: 30px;
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        white-space: nowrap;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+/* Estilos para escritorio */
+@media (min-width: 768px) {
+    .layout {
+        grid-template-columns: 160px 1fr;
+        grid-template-rows: 60px 1fr 60px;
+        grid-template-areas:
+            "header header"
+            "aside main"
+            "aside footer";
+    }
+
+    header,aside,main,footer {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    aside h1 {
+        height: 100%;
+        font-size: 30px;
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        white-space: nowrap;
+        margin: auto;
+        text-align: center;
+    }
+}

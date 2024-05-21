@@ -1,0 +1,15 @@
+main {
+    grid-area: main;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FFF;
+    box-sizing: border-box;
+    background-color: #FFF;
+}

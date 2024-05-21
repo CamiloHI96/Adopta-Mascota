@@ -1,0 +1,18 @@
+aside {
+    grid-area: aside;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FFF;
+    display: flex;
+    align-items: center;
+}
+
+aside h1 {
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}

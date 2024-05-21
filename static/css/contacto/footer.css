@@ -1,0 +1,21 @@
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FFF;
+}
+
+.footer-icons {
+    display: flex;
+}
+
+.icon {
+    display: inline-block;
+    margin-right: 10px;
+}

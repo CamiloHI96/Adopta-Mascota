@@ -1,0 +1,121 @@
+main {
+    grid-area: main;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main {
+    width: calc(33.33% - 40px);
+    background-color: #141414;
+    border-radius: 16px;
+    display: flex;
+    font: 400 18px;
+    color: #FFF;
+    margin: 20px;
+}
+
+/* Estilos para móviles */
+@media (max-width: 479px) {
+    .main {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .image img {
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+        border-radius: 50%;
+        border: 2px solid;
+        object-fit: cover;
+    }
+}
+
+/* Estilos para tabletas */
+@media (min-width: 480px) and (max-width: 767px) {
+    .main {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .image img {
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+        border-radius: 50%;
+        border: 2px solid;
+        object-fit: cover;
+    }
+}
+
+/* Estilos para escritorio */
+@media (min-width: 768px) {
+
+    .main{
+        justify-content: center;
+        margin-top: 4%;
+        height: 80%;
+    }
+    article{
+        align-items: center;
+        justify-content: center;
+    }
+    .descripcion{
+        width: fit-content;
+    }
+}
+
+section {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px 0 0 16px;
+}
+
+article {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.name p:nth-child(1) {
+    font: 400 28px;
+}
+
+.name p:nth-child(2) {
+    font: 400 18px;
+    color: #00A3FF;
+}
+
+.descripcion {
+    font: 400 16px;
+    text-align: center;
+}
+
+.name {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid;
+    object-fit: cover;
+}
+
+.socials {
+    color: #00A3FF;
+}
+
+.socials+.socials {
+    margin-left: 20px;
+}

@@ -1,0 +1,18 @@
+aside {
+    grid-area: aside;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FFF;
+    display: flex;
+    align-items: center;
+}
+
+aside h1 {
+    color: #FFF;
+    width: 100%; /* Ajusta el ancho del h1 al 100% del aside */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0; /* Elimina el margen predeterminado */
+}
