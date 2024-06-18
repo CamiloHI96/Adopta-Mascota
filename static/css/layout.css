@@ -22,7 +22,7 @@ html {
 }
 
 /* Estilos para móviles */
-@media (max-width: 479px) {
+@media (max-width: 480px) {
     header,aside,main,footer {
         margin: 0;
         padding: 0;
@@ -37,7 +37,7 @@ html {
 }
 
 /* Estilos para tabletas */
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
     header,aside,main,footer {
         margin: 0;
         padding: 0;
@@ -71,9 +71,9 @@ html {
         grid-template-columns: 160px 1fr;
         grid-template-rows: 60px 1fr 60px;
         grid-template-areas:
-            "header header"
-            "aside main"
-            "aside footer";
+            "header header header"
+            "aside main main"
+            "footer footer footer";
     }
 
     header,aside,main,footer {
